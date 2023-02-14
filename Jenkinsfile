@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'g++ -o hello hello.cp'
+                sh 'g++ -o hello hello.cpp'
             }
         }
 
@@ -16,7 +16,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo 'deployed successfully'
+                ech 'deployed successfully'
             }
         }
     }
